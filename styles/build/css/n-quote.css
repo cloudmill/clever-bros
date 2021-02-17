@@ -1,0 +1,74 @@
+.n-quote {
+  position: relative;
+  z-index: 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+}
+.n-quote::before, .n-quote::after {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-image: url("../img/w.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.n-quote::before {
+  left: 40px;
+}
+.n-quote::after {
+  right: 40px;
+}
+.n-quote__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 137px;
+  padding: 38px 200px 32px 200px;
+}
+.n-quote__inner::before, .n-quote__inner::after {
+  position: absolute;
+  z-index: -1;
+  content: '"';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 60px;
+  line-height: 140%;
+  color: #E5E5E5;
+}
+.n-quote__inner::before {
+  top: 0;
+  left: 25%;
+}
+.n-quote__inner::after {
+  bottom: -30px;
+  right: 25%;
+}
+.n-quote__quote {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+}
+.n-quote__quote--first {
+  max-width: 570px;
+}
+.n-quote__quote--second {
+  max-width: 785px;
+}
+.n-quote__sourse {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  color: #767676;
+}
+.n-quote__sourse--second {
+  margin-top: 17px;
+}

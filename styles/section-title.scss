@@ -1,0 +1,22 @@
+.section-title {
+    position: relative;
+    padding-left: 105px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    color: #B5B5B5;
+
+    &::before {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: #9DD00D;
+        border-radius: 2.5px;
+    }
+}

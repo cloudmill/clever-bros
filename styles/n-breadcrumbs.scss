@@ -1,0 +1,37 @@
+.n-breadcrumbs {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            position: relative;
+            margin-left: 60px;
+
+            &::before {
+                position: absolute;
+                top: 6px;
+                left: -30px;
+                transform: translate(-50%, -50%);
+                content: "";
+                width: 20px;
+                height: 1px;
+                background-color: #BDBDBD;;
+                pointer-events: none;
+                user-select: none;
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 13px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #B5B5B5;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,81 @@
+$color: #444444;
+
+.n-card {
+    padding: 20px 20px 30px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.09);
+    color: $color;
+
+    &--control {
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    &__control {
+        position: absolute;
+        $size: 20px;
+        width: $size;
+        height: $size;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__control-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &__photo-wrapper {
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: #DEDEDE;
+        border-radius: 10px;
+    }
+
+    &__photo-img {
+        max-width: 100%;
+        max-height: 100%;
+        user-select: none;
+    }
+
+    &__image {
+        height: 140px;
+        background: #D7F4FF;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__image-img {
+        max-width: 100%;
+        max-height: 100%;
+        mix-blend-mode: darken;
+        user-select: none;
+    }
+
+    &__title {
+        margin-top: 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__desc {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

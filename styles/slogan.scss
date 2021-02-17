@@ -1,0 +1,43 @@
+.slogan {
+    position: relative;
+    padding-right: 120px;
+    pointer-events: none;
+
+    &--aside {
+        margin-top: -390px;
+        padding-right: 0;
+        padding-bottom: 140px;
+    }
+
+    &__text {
+        max-width: 785px;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 120%;
+        pointer-events: all;
+
+        &--aside {
+            max-width: 290px;
+            line-height: 100%;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 91px;
+        display: flex;
+
+        &--aside {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        user-select: none;
+    }
+}
