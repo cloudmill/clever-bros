@@ -8,6 +8,14 @@
     text-transform: uppercase;
     color: #B5B5B5;
 
+    @media (max-width: 1024px){
+        padding-left: 80px;
+    }
+    @media (max-width: 768px){
+        padding-left: 55px;
+        font-size: 14px;
+    }
+
     &::before {
         position: absolute;
         top: 6px;

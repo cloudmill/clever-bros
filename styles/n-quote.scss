@@ -19,14 +19,23 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        @media (max-width: 550px){
+            display: none;
+        }
     }
 
     &::before {
         left: 40px;
+        @media (max-width: 1024px){
+            left: 20px;
+        }
     }
 
     &::after {
         right: 40px;
+        @media (max-width: 1024px){
+            right: 20px;
+        }
     }
 
     &__inner {
@@ -36,6 +45,16 @@
         align-items: center;
         min-height: 137px;
         padding: 38px 200px 32px 200px;
+        @media (max-width: 1024px){
+            padding: 25px 150px 25px 150px;
+
+            br {
+                display: none;
+            }
+        }
+        @media (max-width: 768px){
+            padding: 20px 30px 20px 30px;
+        }
 
         &::before,
         &::after {
@@ -52,11 +71,23 @@
         &::before {
             top: 0;
             left: 25%;
+            @media (max-width: 1024px){
+                left: 20%;
+            }
+            @media (max-width: 768px){
+                left: 20px
+            }
         }
 
         &::after {
             bottom: -30px;
             right: 25%;
+            @media (max-width: 1024px){
+                right: 20%;
+            }
+            @media (max-width: 768px){
+                right: 20px;
+            }
         }
     }
 

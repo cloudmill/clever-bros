@@ -18,11 +18,26 @@
   background-position: center center;
   background-size: contain;
 }
+@media (max-width: 550px) {
+  .n-quote::before, .n-quote::after {
+    display: none;
+  }
+}
 .n-quote::before {
   left: 40px;
 }
+@media (max-width: 1024px) {
+  .n-quote::before {
+    left: 20px;
+  }
+}
 .n-quote::after {
   right: 40px;
+}
+@media (max-width: 1024px) {
+  .n-quote::after {
+    right: 20px;
+  }
 }
 .n-quote__inner {
   position: relative;
@@ -31,6 +46,19 @@
   align-items: center;
   min-height: 137px;
   padding: 38px 200px 32px 200px;
+}
+@media (max-width: 1024px) {
+  .n-quote__inner {
+    padding: 25px 150px 25px 150px;
+  }
+  .n-quote__inner br {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .n-quote__inner {
+    padding: 20px 30px 20px 30px;
+  }
 }
 .n-quote__inner::before, .n-quote__inner::after {
   position: absolute;
@@ -46,9 +74,29 @@
   top: 0;
   left: 25%;
 }
+@media (max-width: 1024px) {
+  .n-quote__inner::before {
+    left: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .n-quote__inner::before {
+    left: 20px;
+  }
+}
 .n-quote__inner::after {
   bottom: -30px;
   right: 25%;
+}
+@media (max-width: 1024px) {
+  .n-quote__inner::after {
+    right: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .n-quote__inner::after {
+    right: 20px;
+  }
 }
 .n-quote__quote {
   font-style: italic;

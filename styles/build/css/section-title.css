@@ -8,6 +8,17 @@
   text-transform: uppercase;
   color: #B5B5B5;
 }
+@media (max-width: 1024px) {
+  .section-title {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .section-title {
+    padding-left: 55px;
+    font-size: 14px;
+  }
+}
 .section-title::before {
   position: absolute;
   top: 6px;

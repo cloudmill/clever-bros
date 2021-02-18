@@ -6,6 +6,14 @@ $color: #444444;
     background-color: white;
     box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.09);
     color: $color;
+    @media (max-width: 950px){
+        padding: 10px 10px 15px;
+    }
+    @media (max-width: 550px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     &--control {
         padding-bottom: 50px;
@@ -52,6 +60,7 @@ $color: #444444;
 
     &__image {
         height: 140px;
+        width: 100%;
         background: #D7F4FF;
         border-radius: 10px;
         display: flex;
@@ -71,11 +80,17 @@ $color: #444444;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
+        @media (max-width: 950px){
+            font-size: 16px;
+        }
     }
 
     &__desc {
         margin-top: 10px;
         font-size: 16px;
         line-height: 24px;
+        @media (max-width: 950px){
+            font-size: 14px;
+        }
     }
 }

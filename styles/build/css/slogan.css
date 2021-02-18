@@ -15,6 +15,16 @@
   line-height: 120%;
   pointer-events: all;
 }
+@media (max-width: 1024px) {
+  .slogan__text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .slogan__text {
+    font-size: 25px;
+  }
+}
 .slogan__text--aside {
   max-width: 290px;
   line-height: 100%;
