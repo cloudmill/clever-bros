@@ -8,6 +8,11 @@
   padding-right: 0;
   padding-bottom: 140px;
 }
+@media (max-width: 968px) {
+  .slogan--aside {
+    display: none;
+  }
+}
 .slogan__text {
   max-width: 785px;
   font-weight: 500;
