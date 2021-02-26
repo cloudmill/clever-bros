@@ -2,6 +2,9 @@
     position: relative;
     padding-right: 120px;
     pointer-events: none;
+    @media (max-width: 768px) {
+        padding-right: 0;
+    }
 
     &--aside {
         margin-top: -528px;
@@ -19,10 +22,10 @@
         line-height: 120%;
         pointer-events: all;
         @media (max-width:1024px){
-            font-size: 30px;
+            font-size: 28px;
         }
         @media (max-width:768px){
-            font-size: 25px;
+            font-size: 20px;
         }
 
         &--aside {
@@ -40,6 +43,11 @@
 
         &--aside {
             right: auto;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            bottom: -30px;
             left: 0;
         }
     }

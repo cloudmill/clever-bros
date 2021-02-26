@@ -3,6 +3,11 @@
   padding-right: 120px;
   pointer-events: none;
 }
+@media (max-width: 768px) {
+  .slogan {
+    padding-right: 0;
+  }
+}
 .slogan--aside {
   margin-top: -528px;
   padding-right: 0;
@@ -22,12 +27,12 @@
 }
 @media (max-width: 1024px) {
   .slogan__text {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
   .slogan__text {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .slogan__text--aside {
@@ -44,6 +49,12 @@
 .slogan__image--aside {
   right: auto;
   left: 0;
+}
+@media (max-width: 768px) {
+  .slogan__image {
+    bottom: -30px;
+    left: 0;
+  }
 }
 .slogan__img {
   max-width: 100%;

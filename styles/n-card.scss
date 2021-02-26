@@ -66,6 +66,12 @@ $color: #444444;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 1024px){
+            height: 120px;
+        }
+        @media (max-width: 768px){
+            height: 98px;
+        }
     }
 
     &__image-img {
@@ -80,8 +86,12 @@ $color: #444444;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        @media (max-width: 950px){
+        @media (max-width: 1024px){
             font-size: 16px;
+        }
+        @media (max-width: 768px){
+            font-size: 14px;
+            margin-top: 30px;
         }
     }
 
@@ -89,8 +99,11 @@ $color: #444444;
         margin-top: 10px;
         font-size: 16px;
         line-height: 24px;
-        @media (max-width: 950px){
+        @media (max-width: 1024px){
             font-size: 14px;
+        }
+        @media (max-width: 768px){
+            font-size: 12px;
         }
     }
 }

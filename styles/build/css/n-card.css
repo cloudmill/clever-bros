@@ -56,6 +56,16 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .n-card__image {
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .n-card__image {
+    height: 98px;
+  }
+}
 .n-card__image-img {
   max-width: 100%;
   max-height: 100%;
@@ -68,9 +78,15 @@
   font-size: 18px;
   line-height: 24px;
 }
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
   .n-card__title {
     font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .n-card__title {
+    font-size: 14px;
+    margin-top: 30px;
   }
 }
 .n-card__desc {
@@ -78,8 +94,13 @@
   font-size: 16px;
   line-height: 24px;
 }
-@media (max-width: 950px) {
+@media (max-width: 1024px) {
   .n-card__desc {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .n-card__desc {
+    font-size: 12px;
   }
 }
